@@ -95,3 +95,25 @@ button{font:inherit}
   .brand-mark{display:none}
   .brand-section{font-size:13px}
 }
+
+.drive-status{font-size:13px;color:var(--muted);white-space:nowrap}
+.drive-status[data-type="ok"]{color:#2f7c4a;font-weight:700}
+.drive-status[data-type="waiting"]{color:#8a6a1f}
+.drive-status[data-type="error"]{color:#b04444}
+.file-table-wrap{width:100%;overflow-x:auto}
+.file-table{width:100%;border-collapse:collapse;min-width:640px}
+.file-table th,.file-table td{padding:14px 18px;border-bottom:1px solid var(--line);text-align:left;font-size:14px}
+.file-table th{font-size:12px;color:#6f7a82;background:#fff;font-weight:700}
+.file-table tbody tr:hover{background:#fbfdfe}
+.file-table tbody tr:last-child td{border-bottom:0}
+.file-name{display:flex;align-items:center;gap:10px;font-weight:600;color:#36444d}
+.file-icon{font-size:18px;flex:0 0 auto}
+.download-link{display:inline-flex;align-items:center;justify-content:center;border:1px solid #cfdbe3;border-radius:8px;padding:7px 11px;color:var(--brand);font-size:12px;font-weight:700;background:#fff}
+.download-link:hover{background:#f5f9fc;border-color:#b9cbd7}
+.empty-row{text-align:center!important;color:#8a959d!important;padding:54px 18px!important}
+
+@media (max-width:720px){
+  .drive-status{white-space:normal}
+  .file-table{min-width:560px}
+  .file-table th,.file-table td{padding:12px 14px;font-size:13px}
+}
